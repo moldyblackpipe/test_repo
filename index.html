@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Movies</title>
+    <style>
+        /* All previous styles remain exactly the same */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a1c20 0%, #283593 100%);
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .movie {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .movie:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .movie img {
+            max-width: 200px;
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .movie img:hover {
+            transform: scale(1.05);
+        }
+        .movie h2 {
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+            font-size: 1.8em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .movie p {
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+        .imdb-rating {
+            background: #f5c518;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .imdb-link {
+            display: inline-block;
+            background: #e50914;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        .imdb-link:hover {
+            background: #ff0f1f;
+            transform: translateY(-2px);
+        }
+        .quick-nav {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            display: none;
+        }
+        @media (min-width: 1200px) {
+            .quick-nav {
+                display: block;
+            }
+        }
+        .quick-nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 0.9em;
+            transition: color 0.3s ease;
+        }
+        .quick-nav a:hover {
+            color: #f5c518;
+        }
+    </style>
+</head>
+<body>
+    <div class="quick-nav">
+        <a href="#prestige">The Prestige</a>
+        <a href="#batman-begins">Batman Begins</a>
+        <a href="#dark-knight">The Dark Knight</a>
+        <a href="#gforce">G-Force</a>
+        <a href="#battleship">Battleship</a>
+    </div>
+
+    <h1>My Favorite Movies</h1>
+    
+    <div class="movie" id="prestige">
+        <h2>The Prestige (2006)</h2>
+        <img src="https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_.jpg" alt="The Prestige Movie Poster">
+        <div class="imdb-rating">IMDb: 8.5/10</div>
+        <p>A mysterious tale of two rival magicians in Victorian London, whose intense competition leads them down a dark path of obsession, secrecy, and sacrifice. Directed by Christopher Nolan and starring Christian Bale and Hugh Jackman.</p>
+        <a href="https://www.imdb.com/title/tt0482571" class="imdb-link" target="_blank">View on IMDb</a>
+    </div>
+
+    <div class="movie" id="batman-begins">
+        <h2>Batman Begins (2005)</h2>
+        <img src="https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" alt="Batman Begins Movie Poster">
+        <div class="imdb-rating">IMDb: 8.2/10</div>
+        <p>The origin story of Bruce Wayne's transformation into Batman, as he confronts his fears and fights to save Gotham City from destruction. This dark and gritty reboot stars Christian Bale and was directed by Christopher Nolan.</p>
+        <a href="https://www.imdb.com/title/tt0372784" class="imdb-link" target="_blank">View on IMDb</a>
+    </div>
+
+    <div class="movie" id="dark-knight">
+        <h2>The Dark Knight (2008)</h2>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg" alt="The Dark Knight Movie Poster">
+        <div class="imdb-rating">IMDb: 9.0/10</div>
+        <p>Batman faces his greatest challenge yet when the Joker terrorizes Gotham City. This critically acclaimed film features an iconic performance by Heath Ledger as the Joker and continues Christopher Nolan's Batman trilogy.</p>
+        <a href="https://www.imdb.com/title/tt0468569" class="imdb-link" target="_blank">View on IMDb</a>
+    </div>
+
+    <div class="movie" id="gforce">
+        <h2>G-Force (2009)</h2>
+        <img src="https://m.media-amazon.com/images/I/510N95MJAyL._AC_.jpg" alt="G-Force Movie Poster">
+        <div class="imdb-rating">IMDb: 5.1/10</div>
+        <p>A specially trained squad of guinea pigs is dispatched to stop a diabolical billionaire from taking over the world. This action-packed family adventure combines comedy with high-tech espionage.</p>
+        <a href="https://www.imdb.com/title/tt1031969" class="imdb-link" target="_blank">View on IMDb</a>
+    </div>
+
+    <div class="movie" id="battleship">
+        <h2>Battleship (2012)</h2>
+        <img src="https://m.media-amazon.com/images/M/MV5BMjI5NTM5MDA2N15BMl5BanBnXkFtZTcwNjkwMzQxNw@@._V1_.jpg" alt="Battleship Movie Poster">
+        <div class="imdb-rating">IMDb: 5.8/10</div>
+        <p>A fleet of ships is forced to do battle with an armada of unknown origins in order to discover and thwart their destructive goals. Based on the classic naval combat game, starring Taylor Kitsch and Rihanna.</p>
+        <a href="https://www.imdb.com/title/tt1440129" class="imdb-link" target="_blank">View on IMDb</a>
+    </div>
+
+</body>
+</html>
